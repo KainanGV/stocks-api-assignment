@@ -46,7 +46,7 @@ The service will be available on port `8000`.
 ## Running tests
 
 ```bash
-TESTING=1 pytest -q
+TESTING=1 PYTHONPATH=. pytest --disable-warnings -q
 ```
 
 > The `TESTING=1` flag ensures that external dependencies like the database and APIs are **automatically mocked**, allowing unit tests to run without a real PostgreSQL or API calls.
